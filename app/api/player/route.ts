@@ -40,3 +40,11 @@ export async function POST(req: Request) {
     );
   }
 }
+    return NextResponse.json(player);
+  } catch (error) {
+    return NextResponse.json(
+      { error: "创建球员失败" },
+      { status: 500 }
+    );
+  }
+}
