@@ -27,6 +27,8 @@ export async function POST(req: Request) {
         name: body.name,
         age: Number(body.age),
         position: body.position,
+        speed: Number(body.speed || 60),
+        shooting: Number(body.shooting || 60),
       },
     });
 
