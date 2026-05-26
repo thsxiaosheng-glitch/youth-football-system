@@ -12,8 +12,8 @@ model Player {
   name      String
   age       Int
   position  String
-  speed     Int
-  shooting  Int
+  speed     Int      @default(60)
+  shooting  Int      @default(60)
   createdAt DateTime @default(now())
 }
 model Training {
